@@ -13,78 +13,63 @@
 <p>eat three dog of corn</p>
 <a href="../index.html">Go to Home Page</a>
 </body>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-
+<!DOCTYPE html>
 <html>
-
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
-    <title></title>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-    <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-    <script src="Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+.dropdown-content a:hover {background-color: #ddd;}
 
-    <script src="Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+.dropdown:hover .dropdown-content {display: block;}
 
-    <script src="Bootstrap/js/bootstrap.js" type="text/javascript"></script>
-
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
 </head>
-
 <body>
 
-    <div class="navbar navbar-inverse">
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
 
-        <div class="Container">
-
-            <ul class="nav navbar-nav">
-
-                <li><a href="#">Home</a></li>
-
-                <li><a href="#about">Technologies</a></li>
-
-                <li><a href="#contact">Article</a></li>
-
-                <li><a href="#contact">blog</a></li>
-
-                <li class="dropdown"><a href="#" class="dropdown-toggle">News <b class="caret"></b></a>
-
-                    <ul class="dropdown-menu">
-
-                        <li><a href="#">Home</a></li>
-
-                        <li><a href="#">Technologies</a></li>
-
-                        <li><a href="#">Article</a></li>
-
-                        <li><a href="#">blog</a></li>
-
-                    </ul>
-
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-    <script src="Bootstrap/js/jquery.js" type="text/javascript"></script>
-
-    <script src="Bootstrap/js/dropdown.js" type="text/javascript"></script>
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            $('.dropdown-toggle').dropdown();
-
-        }); 
-
-    </script>
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
 
 </body>
-
+</html>
+<html>
+<head>
 </html>
